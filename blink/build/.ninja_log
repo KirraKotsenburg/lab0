@@ -83,3 +83,5 @@
 12458	13662	7464016772340438	CMakeFiles/blink.dir/C_/Users/kirra/.pico-sdk/sdk/2.0.0/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj	d5dbee574d0b3452
 11281	14305	7464016760937035	CMakeFiles/blink.dir/C_/Users/kirra/.pico-sdk/sdk/2.0.0/lib/cyw43-driver/src/cyw43_ll.c.obj	4d4c68868ed9e16b
 14306	15539	7464016790741274	blink.elf	da7c56f170e2d508
+50	349	7464031855750755	CMakeFiles/blink.dir/blink.c.obj	db92f018ff4f543a
+353	1157	7464031858781607	blink.elf	da7c56f170e2d508
