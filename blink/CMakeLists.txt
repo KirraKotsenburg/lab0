@@ -47,6 +47,7 @@ if(PICO_TOOLCHAIN_PATH MATCHES "RISCV")
     if(PICO_TOOLCHAIN_PATH MATCHES "COREV")
         set(PICO_COMPILER pico_riscv_gcc_zcb_zcmp)
     endif()
+endif()
 # ====================================================================================
 set(PICO_BOARD pico_w CACHE STRING "Board type")
 
