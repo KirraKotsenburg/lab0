@@ -73,7 +73,7 @@ target_link_libraries(testing
         pico_stdlib)
 
 if (PICO_CYW43_SUPPORTED)
-    target_link_libraries(blink pico_cyw43_arch_none)
+    target_link_libraries(testing pico_cyw43_arch_none)
 endif()
 
 # Add the standard include files to the build
