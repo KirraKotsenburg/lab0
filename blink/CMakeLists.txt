@@ -34,7 +34,19 @@ endif()
 
 
 set(picotoolVersion 2.0.0)
-include(${USERHOME}/.pico-sdk/cmake/pico-vscode.cmake)
+set(pioasm_HINT ${USERHOME}/.pico-sdk/tools/2.0.0/pioasm)
+if(EXISTS ${pioasm_HINT})
+    set(pioasm_DIR ${pioasm_HINT})
+endif()
+set(picotool_HINT ${USERHOME}/.pico-sdk/picotool/2.0.0/picotool)
+if(EXISTS ${picotool_HINT})
+    set(picotool_DIR ${picotool_HINT})
+endif()
+if(PICO_TOOLCHAIN_PATH MATCHES "RISCV")
+    set(PICO_PLATFORM rp2350-riscv CACHE STRING "Pico Platform")
+    if(PICO_TOOLCHAIN_PATH MATCHES "COREV")
+        set(PICO_COMPILER pico_riscv_gcc_zcb_zcmp)
+    endif()
 # ====================================================================================
 set(PICO_BOARD pico_w CACHE STRING "Board type")
 
