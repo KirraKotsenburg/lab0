@@ -72,6 +72,10 @@ pico_enable_stdio_usb(testing 0)
 target_link_libraries(testing
         pico_stdlib)
 
+if (PICO_CYW43_SUPPORTED)
+    target_link_libraries(blink pico_cyw43_arch_none)
+endif()
+
 # Add the standard include files to the build
 target_include_directories(testing PRIVATE
   ${CMAKE_CURRENT_LIST_DIR}
